@@ -11,9 +11,6 @@ const Navbar = () => {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="navbar-brand">Axel Gomez Cordoba</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="/calculadora">Calculadora Basica</a>
                             </li>
                             <li class="nav-item">
