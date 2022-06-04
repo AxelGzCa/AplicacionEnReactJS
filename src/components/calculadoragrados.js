@@ -21,7 +21,7 @@ export default function CalculadoraGrados() {
     <div>
         <div className='containerform'>
             <div className='group'>
-                <h2>Ingrese una temperatura (númerica)</h2>
+                <h2>Escriba la temperatura a convertir.</h2>
                 <div>
                     <input className='form-control' onChange={handleInput} name="Numero1" value={input.Numero1} type="text"></input>
                 </div>
