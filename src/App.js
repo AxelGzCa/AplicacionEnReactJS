@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Calculadora from "./components/calculadora";
+import CalculadoraGrados from "./components/calculadoragrados";
+import Formulario from "./components/formulario";
+import Navbar from "./components/navbar";
+export function App() {
+    return (
+        <div>
+            <BrowserRouter>
+                <div>
+                    <Navbar></Navbar>
+                    <div class="nav-search">
+                        <Routes>
+                            <Route path="/Calculadora" element={<Calculadora />} />
+                            <Route path="/CalculadoraGrados" element={<CalculadoraGrados />} />
+                            <Route path="/Formulario" element={<Formulario />} />
+                        </Routes>
+                    </div>
+                </div>
+            </BrowserRouter>
+        </div>
+    );
 }
-
-export default App;
