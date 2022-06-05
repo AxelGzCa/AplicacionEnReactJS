@@ -4,13 +4,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Calculadora from "./components/calculadora";
 import CalculadoraGrados from "./components/calculadoragrados";
 import Formulario from "./components/formulario";
-import Navbar from "./components/navbar";
+import Menu from "./components/menu";
 export function App() {
     return (
         <div>
             <BrowserRouter>
                 <div>
-                    <Navbar></Navbar>
+                    <Menu></Menu>
                     <div class="nav-search">
                         <Routes>
                             <Route path="/Calculadora" element={<Calculadora />} />
